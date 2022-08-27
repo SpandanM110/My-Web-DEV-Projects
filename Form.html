@@ -1,0 +1,183 @@
+<!Doctype html>
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compartible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> College Login Page </title>
+    <style>
+        body{
+        background-image:url("https://blog.stackfindover.com/wp-content/uploads/2021/05/svg-animated-background.jpg");
+        background-repeat:no-repeat ;
+        background-size: cover;
+        }	
+    .form-control {
+            background-color: lightcyan;
+            text-align: left;
+            margin-bottom: 25px;
+            max-width: 450px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    .form-control label {
+            display: block;
+            margin-bottom: 10px;
+            width: auto;
+        }
+
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+            border: 3px solid #777;
+            border-radius: 1px;
+            font-family: inherit;
+            padding: 3px;
+            display: block;
+            width: 95%;
+            
+        }
+    /* Styling form-control Radio button and Checkbox */
+    .form-control input[type="radio"],
+    .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+    button{
+            background-color: lightgreen;
+            border: 3px solid #777;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+    h1{
+        text-align: center;
+        color:blueviolet;
+    }
+    </style>
+</head>
+<body>
+<form action="/action_page.php">
+    <h1>College and Industrial Login Page by Spandan Mukherjee</h1>
+    <div class = "form-control">
+    <label><b> Username </b></label>
+    <input type="text">
+    </br>
+
+    <label><b> Email-Id  </b></label>
+    <input type="email"> 
+    </br>
+ 
+    <label><b>Mobile-number</b></label>
+    <input type="number">
+    </br>
+   
+
+    <label><b>Address </b></label>
+    <textarea name="message" rows="1" cols="25"></textarea>
+    </br>
+    
+    
+    <label><b>Select Your Home City</b></label></br>
+        <select id="cities" name="cities">
+            <option value="0">Select</option>
+            <option value="1">Bengaluru</option>
+            <option value="2">Hyderabad</option>
+            <option value="3">Mumbai</option>
+            <option value="4">Indore</option>
+            <option value="5">Kolkata</option>
+            <option value="6">Chennai</option>
+            <option value="7">Bhuvaneshwar</option>
+            <option value="8">Delhi</option>
+            <option value="9">Mangalore</option>
+            <option value="10">Vapi</option>
+            <option value="11">Mirzapur</option>
+    </select>
+    </br>
+
+    <label for="role" id="label-role">
+    <b>Which option best describes you?</b>
+    </label>
+    <select name="role" id="role">
+        <option value="student">Student</option>
+        <option value="intern">Intern</option>
+        <option value="professional">Professional</option>
+    </select>
+    <br>
+    <label for="birthday"><b>Date of Birthday:</b></label>
+    <input type="date" id="birthday" name="birthday">
+    </br>
+    
+    <label for="week"><b>Select a week for the start:</b></label>
+    <input type="week" id="week" name="week">
+</br>
+
+    <label for="time"><b>Select your time for working:[At least 6hrs working needed]</b> </label>
+    <label>Start:</label><input type="time">
+    <label>End:</label><input type="time">
+    </br>
+
+
+    <label>
+    <b> If you are a college student which year you currently study?</b>
+    </label>
+
+    <!-- Input Type Radio Button -->
+    <label for="recommed-1">
+        <input type="radio"
+               id="recommed-1"
+               name="recommed">First Year(I)</input>
+    </label>
+    <label for="recommed-2">
+        <input type="radio"
+               id="recommed-2"
+               name="recommed">Second Year(II)</input>
+    </label>
+    <label for="recommed-3">
+        <input type="radio"
+               id="recommed-3"
+               name="recommed">Third Year(III)</input>
+    </label>
+    <label for="recommed-4">
+        <input type="radio"
+            id="recommed-4"
+            name="recommed">Fourth Year(IV)</input>
+    </label>
+    
+    <label for="favcolor"><b>Select your favorite color:</b></label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+</br>
+
+    <label for="comment">
+    <b>Any comments or suggestions:</b>
+    </label>
+    <!-- multi-line text input control -->
+    <textarea name="comment" id="comment"
+        placeholder="Enter your comment here">
+    </textarea>
+
+    <label for="vol"><b>How do you rate this form? (between 0 and 10):</b></label>
+    <input type="range" id="vol" name="vol" min="0" max="10">
+    </input></br>
+    <button type="submit" value="submit">
+        Submit
+    </button>
+
+    <button type="reset" value="reset">
+    Reset
+    </button>
+    </div>
+
+    
+</form>
+    
+    
+
+
+
+</body>
+</html>
