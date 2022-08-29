@@ -1,0 +1,105 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuPfO7baaERM8UPKL-yyex3S-vwwTNRpUSsFOX_qMUHUZdoTWKJHU_pvRk7sFXLl4zakA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+
+}
+.vpn{
+    background-color: #87E1C7;
+    width: 1050px;
+    height:350px;
+    padding-bottom:10px;
+    margin:auto;
+}
+
+.vpn1{
+    background-color: aquamarine;
+    width: 1000px;
+    height:350px;
+    padding-bottom:10px;
+    margin:auto;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class = "vpn">
+<h2>Internal Marks</h2>
+<b>
+    IA1: <input onblur="findTotal()" type="text" name="IA" id="IA1"/><br> <br>
+    IA2: <input onblur="findTotal()" type="text" name="IA" id="IA2"/><br> <br>
+    IA3: <input onblur="findTotal()" type="text" name="IA" id="IA3"/><br> <br>
+
+<br><br>
+Total: <input type="text" name="total" id="total"/>
+Average: <input type="text" name="average" id="average"/>
+
+<script type="text/javascript">
+    function findTotal(){
+        var arr = document.getElementsByName('IA');
+        var tot=0;
+        for(var i=0;i<arr.length;i++){
+            if(parseInt(arr[i].value)){
+                tot += parseInt(arr[i].value);
+                var average = tot/3;
+            }
+        }
+        document.getElementById('total').value = tot;
+        document.getElementById('average').value = average;
+
+    }
+
+ </script>
+</b>
+</div>
+<br><br>
+
+<div class="vpn1">
+
+<h2> SEMESTER END RESULT</h2>
+<br><br>
+Subject1: <input onblur="findTotal" type="text" name="Subject" id="qty1" /><br><br>
+Subject2: <input onblur="findTotal" type="text" name="Subject" id="qty2" /><br><br>
+Subject3: <input onblur="findTotal" type="text" name="Subject" id="qty3" /><br><br>
+Subject4: <input onblur="findTotal" type="text" name="Subject" id="qty4" /><br><br>
+Subject5: <input onblur="findTotal" type="text" name="Subject" id="qty5" /><br><br>
+Subject6: <input onblur="findTotal" type="text" name="Subject" id="qty6" /><br><br>
+
+<br><br>
+Total: <input type="text" name="total" id="total"/>
+Percentage: <input type="text" name="percentage" id="percentage"/>
+
+<b>
+<script type="text/javascript">
+function findTotal(){
+        var arr = document.getElementsByName('Subject');
+        var tot=0;
+        for(var i=0;i<arr.length;i++){
+            if(parseInt(arr[i].value)){
+                tot += parseInt(arr[i].value);
+                var percentage= (tot/600)*100;
+            }
+        }
+        
+        document.getElementById('total').value = tot;
+        document.getElementById('percentage').value = percentage;
+        
+    }
+</script>
+</b>
+</div>
+
+
+
+
+
+</body>
+</html>
